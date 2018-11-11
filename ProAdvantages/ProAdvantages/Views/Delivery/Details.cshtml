@@ -1,0 +1,36 @@
+@model ProAdvantages.Models.DeliveryService
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>DeliveryService</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Type)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Type)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.DeliveryRoute)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.DeliveryRoute)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Parcel)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Parcel.PID)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.DSID">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>

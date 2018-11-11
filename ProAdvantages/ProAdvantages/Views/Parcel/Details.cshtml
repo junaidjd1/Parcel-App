@@ -1,0 +1,54 @@
+@model ProAdvantages.Models.Parcel
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Parcel</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Destination)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Destination)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.DeliveryDate)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.DeliveryDate)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.InsuranceWorth)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.InsuranceWorth)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Dimension)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Dimension)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Weight)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Weight)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.FID)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.FID)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.PID">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>

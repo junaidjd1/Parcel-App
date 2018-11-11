@@ -1,0 +1,30 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.App" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.1.5" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGenerators.Mvc" Version="2.1.5" />
+    <PackageReference Include="SqlTableDependency" Version="8.5.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Db\" />
+    <Folder Include="Migrations\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Remove="Views\Home\DeliveryService.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Remove="Migrations\20181111031536_FirstModelCreate.cs" />
+    <Compile Remove="Migrations\20181111031536_FirstModelCreate.Designer.cs" />
+    <Compile Remove="Migrations\XPOSTDbContextModelSnapshot.cs" />
+    <Compile Remove="Migrations\20181111041825_ModelCreate.Designer.cs" />
+    <Compile Remove="Controllers\DeliveryServiceController.cs" />
+    <Compile Remove="Controllers\FranchiseServiceController.cs" />
+    <Compile Remove="Migrations\20181111043213_ModelCreate.Designer.cs" />
+  </ItemGroup>
+</Project>
